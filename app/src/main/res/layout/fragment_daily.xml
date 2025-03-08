@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".DailyFragment">
+
+
+        <ScrollView
+            android:id="@+id/calendarFragmentScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <!-- Breakfast> Puncakes -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Breakfast"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                       />
+
+                    <!-- Dish 1 Photo -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/dish1ImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pancakes" />
+
+                        <ImageView
+                            android:id="@+id/dish1FavoriteImageView"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/clicked_favorite_24"
+                            android:clickable="true"
+                            android:focusable="true" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dish1NameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simple Vegan Puncakes"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- tags try1 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/dish1DietaryTag1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vegan"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_selector"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/dish1DietaryTag2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gluten Free"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_selector"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/dish1DietaryTag3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Breakfast"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_yellow"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/descriptionTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:textStyle="italic"
+                        android:text="These vegan pancakes are light, fluffy and are made with just 6 ingredients that you probably already have on hand. "
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:id="@+id/showMoreButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/green"
+                        android:minWidth="20dp"
+                        android:minHeight="28dp"
+                        android:textStyle="bold"
+                        android:text="Show More"
+                        android:textColor="@color/teal_700"
+                        android:textSize="12sp" />
+
+                    <!-- Breakfast Ingredients linlayaout1-->
+                    <LinearLayout
+                        android:id="@+id/linlayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dish1IngredientsTextView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:text="Ingredients:" />
+
+                        <TextView
+                            android:id="@+id/ingredientTextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1/2 cups all purpose flour"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1 tablespoon baking powder"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1/2 teaspoon salt"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="2 tablespoons granulated sugar"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1 cup soy milk"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1/2 cup water"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="2 tb canola oil"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                    </LinearLayout>
+                    <!--table1 -->
+                    <TableLayout
+                        android:id="@+id/table1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tabs_selector"
+                        android:padding="10dp"
+                        android:layout_margin="10dp">
+
+                        <!-- Header Row -->
+                        <TableRow>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prep"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cook"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Servings"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+                        </TableRow>
+
+                        <!-- Divider Line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+                        <!-- Data Row -->
+                        <TableRow>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3 servings"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <!-- Divider Line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+
+                    </TableLayout>
+                    <!--dish1TextView1 -->
+                    <TextView
+                        android:id="@+id/dish1TextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Directions"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <!-- Breakfast Directions -->
+                    <!--dish1DirectionsTextView -->
+                    <TextView
+                        android:id="@+id/dish1DirectionsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:text="Step 1: In a large bowl, whisk together the flour, baking powder, salt and sugar.
+                            \nStep 2: Pour the milk, water and oil into the bowl with the dry ingredients, and stir with a large spoon until just combined. A few lumps are okay; do not over mix or your pancakes won't be as fluffy.
+                            \nStep 3: Heat a large griddle or pan over medium-high heat. Grease the pan with vegan butter or coconut oil, and drop about 1/3 cup of the batter onto it. Cook until bubbles form, then flip and cook until golden brown on the other side, about 1-2 minutes. Repeat with all the remaining batter.
+                            \nStep 4: Serve with vegan butter, pure maple syrup and perhaps some fresh fruit." />
+
+
+
+
+                </LinearLayout>
+
+                <!-- Lunch Tomato Soup  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunch"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <!-- Lunch Photo -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/dish3ImageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/tomatosoup" />
+
+                        <ImageView
+                            android:id="@+id/dish3FavoriteImageView1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/baseline_favorite_24"
+                            android:clickable="true"
+                            android:focusable="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dish3NameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tomato Soup"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- tags -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/dish3DietaryTag1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vegan"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_selector"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/dish3DietaryTag3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Appetizer"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_yellow"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/descriptionTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:textStyle="italic"
+                        android:text="Learn how to make the BEST Vegan Tomato Soup ever! Silky smooth, dairy free but creamy and made with simple ingredients you probably have in your pantry right now. "
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:id="@+id/showMoreButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/green"
+                        android:minWidth="20dp"
+                        android:minHeight="28dp"
+                        android:textStyle="bold"
+                        android:text="Show More"
+                        android:textColor="@color/teal_700"
+                        android:textSize="12sp" />
+
+                    <!-- Lunch Ingredients linlayout2-->
+
+                    <LinearLayout
+                        android:id="@+id/linlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dish3IngredientsTextView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:text="Ingredients:" />
+
+                        <TextView
+                            android:id="@+id/ingredientTextView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="2 tablespoons olive oil "
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1 medium sweet onion, chopped"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="794 ml canned crushed tomatoes"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="473 ml vegetable broth"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="65 g raw cashews"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="3 tablespoons fresh lemon juice"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1 teaspoon granulated sugar"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                    </LinearLayout>
+                    <!--  table2-->
+                    <TableLayout
+                        android:id="@+id/table2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tabs_selector"
+                        android:padding="10dp"
+                        android:layout_margin="10dp">
+
+                        <!-- Header Row -->
+                        <TableRow>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prep"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cook"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Servings"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+                        </TableRow>
+
+                        <!-- Divider Line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+                        <!-- Data Row -->
+                        <TableRow>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4 servings"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <!-- Divider Line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+
+                    </TableLayout>
+                    <!-- dish1TextView2-->
+                    <TextView
+                        android:id="@+id/dish1TextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Directions"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <!-- Lunch Directions  dish2DirectionsTextView -->
+                    <TextView
+                        android:id="@+id/dish2DirectionsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:text="Step 1: In a large pot, saute the onion in the olive oil (or water) for 4-5 minutes over medium heat, until soft and translucent.
+                            \nStep 2: Add the crushed tomatoes and vegetable broth and stir. Bring to a boil, then lower heat and simmer for about 20 minutes.
+                            \nStep 3: To a high powered blender, add the raw cashews. Now carefully transfer the soup to the blender as well (unless you double the recipe, it should all fit). Use a towel to protect yourself from any splatters, and blend until very smooth.
+                            \nStep 4:Return the blended soup to the pot and taste. Add salt to taste, and stir in a teaspoon of sugar to cut the acidity a little bit. Serve with salad, croutons, a loaf of bread, or dip vegan grilled cheese into it! Enjoy." />
+
+
+
+                </LinearLayout>
+
+                <!-- Dinner Lasagna -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="40dp"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinner"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <!-- Dinner Photo -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/dish2ImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/lasagna" />
+
+                        <ImageView
+                            android:id="@+id/dish2FavoriteImageView"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/baseline_favorite_24"
+                            android:clickable="true"
+                            android:focusable="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dish2NameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vegan Lasagna"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- tags -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/dish2DietaryTag1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vegan"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_selector"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/dish2DietaryTag2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="High Protein"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_yellow"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:id="@+id/dish2DietaryTag3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Main course"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/tabs_yellow"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/descriptionTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:textStyle="italic"
+                        android:text="I don’t say this lightly. This truly is the BEST Vegan Lasagna! Layered with a tofu-cashew ricotta, red lentil marinara and loads of fresh spinach, this lasagna is protein packed with 26 grams per serving and is sure to satisfy!  "
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:id="@+id/showMoreButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/green"
+                        android:minWidth="20dp"
+                        android:minHeight="28dp"
+                        android:textStyle="bold"
+                        android:text="Show More"
+                        android:textColor="@color/teal_700"
+                        android:textSize="12sp" />
+
+                    <!-- Dinner Ingredients linlayout3-->
+                    <LinearLayout
+                        android:id="@+id/linlayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/dish2IngredientsTextView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:text="Ingredients:" />
+
+                        <TextView
+                            android:id="@+id/ingredientTextView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="180 g dried red lentils"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="129 g raw cashews"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1/2 teaspoon salt"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="22 g nutritional yeast"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="454 g firm tofu, patted dry with paper towels"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="3 tablespoons fresh lemon juice"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1 teaspoon dried basil"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1/2 teaspoon garlic powder"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="60 g baby spinach"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                        <TextView
+                            android:id="@+id/ingredientTextView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:text="1 box lasagna noodles, whole grain or gluten"
+                            android:buttonTint="@color/green"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="2dp"
+                            android:drawablePadding="8dp" />
+                    </LinearLayout>
+                    <!-- table3 -->
+                    <TableLayout
+                        android:id="@+id/table3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tabs_selector"
+                        android:padding="10dp"
+                        android:layout_margin="10dp">
+
+                        <!-- Header Row -->
+                        <TableRow>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prep"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cook"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Servings"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+                        </TableRow>
+
+                        <!-- Divider Line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+                        <!-- Data Row -->
+                        <TableRow>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 hour"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1 hr 25 mins"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="8 servings"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+                        </TableRow>
+
+                        <!-- Divider Line -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFFFFF" />
+
+
+                    </TableLayout>
+                    <!-- dish3TextView1 -->
+                    <TextView
+                        android:id="@+id/dish3TextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Directions"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <!-- Dinner Directions dish3DirectionsTextView-->
+                    <TextView
+                        android:id="@+id/dish3DirectionsTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:text="Step 1: First, cook your red lentils. Add 1 cup dried red lentils and 3 cups of water to a medium pot. Bring to a boil, and then simmer for about 20 minutes. Drain the lentils in a fine strainer, and then add to a large bowl. Add both jars of marinara to the bowl with the lentils and mix to combine. Set aside.
+                            \nStep 2: Preheat the oven to 350 degrees.
+                            \nStep 3: Make the Cashew-Tofu Ricotta: Add the cashews to a food processor and process until fine and crumbly. Then add the tofu in chunks, nutritional yeast, lemon juice, salt, basil, oregano and garlic powder to the food processor. Pulse until well combined and pretty smooth.
+                            \nStep 4: Assembling the lasagna: Add about 1 cup of marinara sauce (with the cooked lentils) to the bottom of a large 9 x 13 inch casserole dish or lasagna pan. Spread it around evenly. Next add 4-5 lasagna noodles (uncooked). Spread half of the Cashew-Tofu Ricotta on top of the noodles. Top with half of the spinach. Add about 1 cup of the marinara sauce over the spinach, then place 4-5 lasagna noodles on top. Spread the rest of the Ricotta over the noodles, then the rest of the spinach.
+                            \nStep 5: Cover tightly with foil. Bake for 1 hour. Let cool at least 15 minutes before cutting and serving."
+                        />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>

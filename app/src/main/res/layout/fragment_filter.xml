@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".FilterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="611dp"
+            android:background="#F2F2F2"
+            android:backgroundTint="#E7E7E7"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="13dp"
+                android:layout_height="461dp" />
+
+            <LinearLayout
+                android:layout_width="385dp"
+                android:layout_height="623dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="meal categories" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton13"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="breakfast"
+                        android:textOn="breakfast" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton14"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textIsSelectable="false"
+                        android:textOff="lunch"
+                        android:textOn="lunch" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton15"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="dinner"
+                        android:textOn="dinner" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton16"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorHighlight="#b1fd91"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="snack"
+                        android:textOn="snack" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dietary preferences" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton5"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:shadowColor="@color/green"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorHighlight="@color/green"
+                        android:textColorLink="@color/green"
+                        android:textOff="vegan"
+                        android:textOn="vegan" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton6"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:shadowColor="@color/green"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="vegetarian"
+                        android:textOn="vegetarian" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton9"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="pescatarian"
+                        android:textOn="pescatarian" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton10"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="keto"
+                        android:textOn="keto" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton7"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:shadowColor="@color/green"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorHighlight="@color/green"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="dairy free"
+                        android:textOn="dairy free" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton8"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="gluten free"
+                        android:textOn="gluten free" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton11"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="exclude nuts"
+                        android:textOn="exclude nuts" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton12"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="exclude shellfish"
+                        android:textOn="exclude shellfish" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="other preferences" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton3"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:shadowColor="@color/green"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="environmentally friendly"
+                        android:textOn="environmentally friendly" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton4"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_filter"
+                        android:shadowColor="@color/green"
+                        android:text="ToggleButton"
+                        android:textAllCaps="false"
+                        android:textColorHighlight="@color/green"
+                        android:textColorLink="#b1fd91"
+                        android:textOff="budget friendly"
+                        android:textOn="budget friendly" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <Button
+                    android:id="@+id/apply_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/greenbright"
+                    android:text="APPLY FILTER"
+                    android:textColor="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/adjust_diet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/gray"
+                        android:text="adjust preferences in settings" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
